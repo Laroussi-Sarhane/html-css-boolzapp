@@ -38,12 +38,18 @@ body{
  .col-rigth{
   width: 70%;
   height: 100%;
+  padding-left: 15px;
  }
-
+ .text-inside-right{
+  margin-right: 470px;
+  padding-top: 15px;
+  height: 100%;
+}
  .top-bar{
   height: 70px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid grey;
  }
  .image-small{
   width: 50px;
@@ -111,6 +117,7 @@ body{
   vertical-align: middle;
   background-color: white;
   width: 80%;
+  padding: 5px;
   
  }
 .research-icon{
@@ -127,7 +134,8 @@ body{
   height: 100%;
 }
 .contenitor-users{
-  overflow:scroll
+  overflow:scroll;
+  height: calc(100% - 190px);
 }
 .user{
   display: flex;
@@ -150,5 +158,21 @@ body{
 .timing p{
   font-weight: 400;
 }
-
+.contenitor-message{
+  overflow: scroll;
+  background-image: url(img/mine.jpg);
+  height: calc(100% - 140px);
+}
+.message{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-big{
+  width: 750px;
+  height: 45px;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
 
