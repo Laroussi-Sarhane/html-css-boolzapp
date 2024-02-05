@@ -18,7 +18,7 @@ body{
  .container{
   max-width: 85%;
   margin: 0 auto;
-  height: 650px;
+  height: 780px;
   margin-top: 20px;
  }
  .d-flex{
@@ -39,6 +39,7 @@ body{
   width: 70%;
   height: 100%;
  }
+
  .top-bar{
   height: 70px;
   display: flex;
@@ -90,9 +91,64 @@ body{
  .text-inside{
   margin: 20px 5px;
   height: 100%;
-
  }
-
- 
+ .bar-research{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid grey;
+ }
+ .input-research{
+  height: 35px;
+  vertical-align: middle;
+  background-color: white;
+  width: 90%;
+  
+ }
+ .input-research input{
+  height: 35px;
+  vertical-align: middle;
+  background-color: white;
+  width: 80%;
+  
+ }
+.research-icon{
+  vertical-align: middle;
+  margin-top: 8px;
+  padding: 5px 20px;
+  height: 35px;
+  background-color: white;
+  
+}
+.research-icon i{
+  font-size: 1.1rem;
+  color: grey;
+  height: 100%;
+}
+.contenitor-users{
+  overflow:scroll
+}
+.user{
+  display: flex;
+  justify-content: space-between;
+}
+.text-inside{
+  margin-right: 30px;
+}
+.text-inside h3{
+  padding-left: 10px;
+}
+.p{
+  padding-left: 10px;
+  color: lightgray;
+}
+.timing{
+  padding: 15px 10px;
+  margin-left: 35px;
+}
+.timing p{
+  font-weight: 400;
+}
 
 
