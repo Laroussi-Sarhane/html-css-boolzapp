@@ -31,14 +31,15 @@ body{
   align-items: center;
  }
  .col-left{
-  width: 30%;
+  width: 380px;
   height: 100%;
   padding-left: 15px;
  }
  .col-rigth{
-  width: 70%;
+  width: calc(100% - 380px);
   height: 100%;
   padding-left: 15px;
+  flex-grow: 1;
  }
  .text-inside-right{
   margin-right: 470px;
@@ -105,12 +106,14 @@ body{
   align-items: center;
   background-color: white;
   border-bottom: 1px solid grey;
+  width: 350px;
  }
  .input-research{
   height: 35px;
   vertical-align: middle;
   background-color: white;
   width: 90%;
+  border: #ffffff;
   
  }
  .input-research input{
@@ -135,7 +138,7 @@ body{
   height: 100%;
 }
 .contenitor-users{
-  overflow:scroll;
+  overflow-y:scroll;
   height: calc(100% - 190px);
 }
 .user{
@@ -160,7 +163,7 @@ body{
   font-weight: 400;
 }
 .contenitor-message{
-  overflow: scroll;
+  overflow-y: scroll;
   background-image: url(img/mine.jpg);
   height: calc(100% - 140px);
   padding: 0 80px;
@@ -170,17 +173,21 @@ body{
   display: flex;
   justify-content: space-between;
 }
-.input-big{
+.input-bar-message{
   width: 750px;
   height: 45px;
   margin: 15px 0;
+}
+.input-big{
   border-radius: 10px;
   padding: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  width: 100%;
 }
 .sent{
   display: flex;
   width: 50%;
-  height: 125px;
   border-radius: 10px;
   background-color: greenyellow;
   margin-top: 50px;
@@ -191,7 +198,6 @@ body{
 .received{
   display: flex;
   width: 50%;
-  height: 100px;
   border-radius: 10px;
   background-color:whitesmoke;
   margin-top: 15px;
