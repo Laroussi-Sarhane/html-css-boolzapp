@@ -26,6 +26,7 @@ body{
  .container{
   width: 85%;
   height: 95%;
+  background-color: #EAEAEA;
   
  }
  .d-flex{
@@ -43,15 +44,10 @@ body{
   padding-left: 15px;
  }
  .col-rigth{
-  width: calc(100% - 380px);
+  width: calc(100% - 90px);
   height: 100%;
   padding-left: 15px;
  }
- .text-inside-right{
-  margin-right: 470px;
-  padding-top: 15px;
-  height: 100%;
-}
  .top-bar{
   height: 70px;
   width: 100%;
@@ -93,7 +89,7 @@ body{
  }
  .blu-bar{
   height: 70px;
-  background-color: aquamarine;
+  background-color:#8EDAFC;
   display: flex;
  }
  .circle i{
@@ -106,13 +102,9 @@ body{
   margin: 20px 5px;
   height: 100%;
  }
- .text-inside-right{
-  height: 100%;
- }
+ 
  .icons-right{
-  height: 100%;
-  vertical-align: middle;
-  margin-top: 25px;
+  align-items: center;
   display: flex;
   justify-content: space-around;
   padding: 5px 20px;
@@ -121,7 +113,7 @@ body{
   font-size: 1.4rem;
   padding-right: 15px;
   color: grey;
-  height: 100%;
+  
  }
  .image-small-right{
   width: 50px;
@@ -172,6 +164,7 @@ body{
 .contenitor-users{
   overflow-y:scroll;
   height: calc(100% - 190px);
+  background-color: #ffffff;
 }
 .user{
   display: flex;
@@ -198,6 +191,13 @@ body{
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+.img-text{
+  display: flex;
+  align-items:center;
   
 }
 .contenitor-message{
@@ -230,8 +230,8 @@ body{
   background-color: greenyellow;
   margin-top: 50px;
   padding: 10px 15px;
-  margin-left: 50%;
-  margin-right: 160px;
+  margin-left:auto;
+  margin-right:0;
 }
 .received{
   display: flex;
@@ -255,13 +255,26 @@ body{
 .icon-chevron:hover{
   color: black;
 }
-@media (max-width:991px) {
+@media (max-width:991px){
+  
   .container{
-    width: 100%;
+    
     height: 100%;
   }
   .container .col-left{
     width: 90px;
+  }
+   .container .col-right{
+    width: calc(100% - 90px);
+  }
+  .image-small{
+    display: block;
+  }
+  .top-bar{
+    width: 100%;
+  }
+  .content-top-bar{
+    width: 100%;
   }
   .col-left .icons{
     display: none;
@@ -278,11 +291,42 @@ body{
   .timing{
     display: none;
   }
-  .image-small{
-    display: block;
+  
+  
+
+
+}   
+
+@media (max-width:540px) {
+  .col-left{
+    display: none;
+  }
+  .col-right{
+    width: 100%;
+  }
+  .top-bar{
+    width: 100%;
+  }
+  .content-top-bar{
+    width: 100%;
+  }
+  .message{
+    width: 100%;
+  }
+  
+  
+  
+}
+@media (min-width:992px) {
+  .container{
+    width:90%;
+  }
+  .col-right{
+    width:100%;
   }
   
 }
+
 
 
 
