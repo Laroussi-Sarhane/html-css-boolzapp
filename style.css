@@ -9,17 +9,24 @@
 }
 body{
   font-family: 'Lato', sans-serif;
-  background: linear-gradient();
-  background: linear-gradient(to bottom, #009688 50%, #ffffff 50%);
+  
 }
  img{
   max-width: 100%;
  }
+ .main-wrapper{
+  background: linear-gradient();
+  background: linear-gradient(to bottom, #009688 50%, #ffffff 50%);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+ }
  .container{
-  max-width: 85%;
-  margin: 0 auto;
-  height: 780px;
-  margin-top: 20px;
+  width: 85%;
+  height: 95%;
+  
  }
  .d-flex{
   display: flex;
@@ -39,7 +46,6 @@ body{
   width: calc(100% - 380px);
   height: 100%;
   padding-left: 15px;
-  flex-grow: 1;
  }
  .text-inside-right{
   margin-right: 470px;
@@ -100,13 +106,39 @@ body{
   margin: 20px 5px;
   height: 100%;
  }
+ .text-inside-right{
+  height: 100%;
+ }
+ .icons-right{
+  height: 100%;
+  vertical-align: middle;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 20px;
+ }
+ .icons-right i{
+  font-size: 1.4rem;
+  padding-right: 15px;
+  color: grey;
+  height: 100%;
+ }
+ .image-small-right{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-top: 10px;
+  
+ }
  .bar-research{
   height: 50px;
   display: flex;
   align-items: center;
   background-color: white;
   border-bottom: 1px solid grey;
-  width: 350px;
+  
  }
  .input-research{
   height: 35px;
@@ -162,11 +194,17 @@ body{
 .timing p{
   font-weight: 400;
 }
+.content-top-bar{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  
+}
 .contenitor-message{
-  overflow-y: scroll;
   background-image: url(img/mine.jpg);
   height: calc(100% - 140px);
   padding: 0 80px;
+  overflow: scroll;
 }
 .message{
   height: 70px;
@@ -216,6 +254,34 @@ body{
 }
 .icon-chevron:hover{
   color: black;
+}
+@media (max-width:991px) {
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .container .col-left{
+    width: 90px;
+  }
+  .col-left .icons{
+    display: none;
+  }
+  .blu-bar{
+    display: none;
+  }
+  .bar-research{
+    display: none;
+  }
+  .text-inside{
+    display: none;
+  }
+  .timing{
+    display: none;
+  }
+  .image-small{
+    display: block;
+  }
+  
 }
 
 
