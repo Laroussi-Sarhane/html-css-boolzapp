@@ -44,7 +44,7 @@ body{
   padding-left: 15px;
  }
  .container .col-rigth{
-  width: calc(100% - 380px);
+  width: calc(100% - 75px);
   height: 100%;
   padding-left: 15px;
  }
@@ -204,7 +204,7 @@ body{
   background-image: url(img/mine.jpg);
   height: calc(100% - 140px);
   padding: 0 40px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .message{
   height: 70px;
@@ -310,8 +310,8 @@ body{
   .col-left{
     display: none;
   }
-  .container{
-    width: 90%;
+  .container .col-right{
+    width: 100%;
     
   }
   .col-left{
@@ -332,6 +332,10 @@ body{
 @media (min-width:992px) {
   .container{
     width:90%;
+  }
+  .container .col-right{
+   width: calc(100% - 380px);
+    
   }
   
   
