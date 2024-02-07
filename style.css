@@ -43,8 +43,8 @@ body{
   height: 100%;
   padding-left: 15px;
  }
- .col-rigth{
-  width: calc(100% - 90px);
+ .container .col-rigth{
+  width: calc(100% - 380px);
   height: 100%;
   padding-left: 15px;
  }
@@ -203,7 +203,7 @@ body{
 .contenitor-message{
   background-image: url(img/mine.jpg);
   height: calc(100% - 140px);
-  padding: 0 80px;
+  padding: 0 40px;
   overflow: scroll;
 }
 .message{
@@ -255,17 +255,23 @@ body{
 .icon-chevron:hover{
   color: black;
 }
+
 @media (max-width:991px){
-  
   .container{
-    
-    height: 100%;
+    width: 90%;
+    max-width: 991px;
   }
-  .container .col-left{
+  .col-left{
     width: 90px;
   }
-   .container .col-right{
-    width: calc(100% - 90px);
+   .col-right{
+    width: calc( 100% - 90px );
+  }
+  .contenitor-message .sent{
+    min-width: 250px;
+  }
+  .contenitor-message .received{
+    min-width: 250px;
   }
   .image-small{
     display: block;
@@ -299,34 +305,36 @@ body{
 
 @media (max-width:540px) {
   .container{
-    width: 100%;
+    width: 90%;
+    
   }
   .col-left{
     display: none;
   }
-  .col-right{
-    width: 100%;
+  .container .col-right{
+    width:calc(100% - 0);
+    
   }
-  .top-bar{
-    width: 100%;
+  .contenitor-message .sent{
+    min-width: 25%;
   }
-  .content-top-bar{
-    width: 100%;
+  .contenitor-message .received{
+    min-width: 25%;
   }
-  .message{
-    width: 100%;
+  
   }
   
   
   
-}
+
 @media (min-width:992px) {
   .container{
     width:90%;
   }
   .col-right{
-    width:100%;
+    width: calc(100% - 380px);
   }
+  
   
 }
 
