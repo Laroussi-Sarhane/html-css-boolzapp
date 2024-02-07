@@ -219,7 +219,7 @@ body{
 .input-big{
   border-radius: 10px;
   padding: 10px;
-  display: inline-block;
+  /* display: inline-block */
   margin-left: 10px;
   width: 100%;
 }
@@ -259,13 +259,12 @@ body{
 @media (max-width:991px){
   .container{
     width: 90%;
-    max-width: 991px;
   }
   .col-left{
     width: 90px;
   }
-   .col-right{
-    width: calc( 100% - 90px );
+   .container .col-right{
+   width: calc( 100% - 90px ); 
   }
   .contenitor-message .sent{
     min-width: 250px;
@@ -303,7 +302,7 @@ body{
 
 }   
 
-@media (max-width:540px) {
+@media (max-width:540px){
   .container{
     width: 90%;
     
@@ -311,18 +310,21 @@ body{
   .col-left{
     display: none;
   }
-  .container .col-right{
-    width:calc(100% - 0);
+  .container{
+    width: 90%;
     
   }
-  .contenitor-message .sent{
+  .col-left{
+    display: none;
+  }
+  .sent{
     min-width: 25%;
   }
-  .contenitor-message .received{
+  .received{
     min-width: 25%;
   }
-  
-  }
+
+} 
   
   
   
@@ -331,9 +333,7 @@ body{
   .container{
     width:90%;
   }
-  .col-right{
-    width: calc(100% - 380px);
-  }
+  
   
   
 }
