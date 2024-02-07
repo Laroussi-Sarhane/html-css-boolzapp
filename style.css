@@ -72,7 +72,7 @@ body{
  }
  .icons i{
   font-size: 1.4rem;
-  padding-right: 15px;
+  padding: 0 15px;
   color: grey;
   height: 100%;
  }
@@ -298,6 +298,9 @@ body{
 }   
 
 @media (max-width:540px) {
+  .container{
+    width: 100%;
+  }
   .col-left{
     display: none;
   }
